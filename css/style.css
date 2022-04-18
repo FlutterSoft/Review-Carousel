@@ -18,15 +18,20 @@ html {
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   font-weight: 400;
   font-size: 1.6em;
   background-color: #f6f7fb;
 }
+.title {
+
+}
 .container {
   display: grid;
   max-width: 500px;
+  max-height: 650px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -54,7 +59,9 @@ p {
 
 }
 img {
-  max-width: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%;
   outline: 5px solid #3498db; 
 }
@@ -62,7 +69,29 @@ img {
 .underline {
   background-color: #3498db;
 }
+button {
+  margin: 8px 8px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+}
 
+.random-btn {
+  border: 2px solid #3498db;
+  background-color: #3498db0d;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1em;
+}
+.random-btn:active {
+  transform: scale(.98);
+}
+.random-btn:hover {
+  border: 2px solid #3498db;
+  background-color: #3498db21;}
+}
 
 /******************************************
 /* ADDITIONAL STYLES
