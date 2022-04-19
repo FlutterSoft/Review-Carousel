@@ -30,8 +30,9 @@ body {
 }
 .container {
   display: grid;
-  max-width: 500px;
-  max-height: 650px;
+  width: 80%;
+  max-width: 800px;
+  height: 650px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -55,20 +56,47 @@ h6 {
   font-weight: 300;
 }
 
-p {
 
-}
 img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
   outline: 5px solid #3498db; 
+  z-index: 99;
+  }
+
+
+.circle {
+  background-color: black;
+  position: absolute;
+  top: 300px;
+  right: 450px;
+  z-index: 1;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
 }
 
+
 .underline {
-  background-color: #3498db;
+  height: 0.25rem;
+  width: 8rem;
+  background: #3498db;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
 }
+.review {
+  padding: 1.5rem 2rem;
+  /* border-radius: var(--radius); */
+  /* box-shadow: 2px 2px black; */
+  transition: 400ms;
+  max-height: 650px;
+
+}
+
 button {
   margin: 8px 8px;
   font-size: 18px;
